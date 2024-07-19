@@ -6,6 +6,7 @@ using HarmonyLib;
 namespace OldBulkheadDoorHarmony.BepInEx;
 
 [BepInPlugin(Module.GUID, Module.Name, Module.Version)]
+[BepInDependency("WIS", BepInDependency.DependencyFlags.HardDependency)]
 public class Plugin : BasePlugin {
     public override void Load() {
         APILogger.Log("Plugin is loaded!");
